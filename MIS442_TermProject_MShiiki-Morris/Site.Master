@@ -1,0 +1,51 @@
+﻿<!-- Term Project Final - Aspect Shop -->
+<!-- Michael Shiiki-Morris -->
+<!-- Oregon Institute of Technology -->
+<!-- MIS442 -->
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="MIS442_TermProject_MShiiki_Morris.Site" %>
+<!DOCTYPE html>
+
+<!-- Master page - Package, script, and stylesheet links -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/AspectCustomStyles.css" rel="stylesheet" />
+    <title>Aspect Shop</title>
+    <asp:ContentPlaceHolder ID="head" runat="server"></asp:ContentPlaceHolder>
+</head>
+ <!-- Content placeholders for all pages, header and footer data located in this section -->
+<body>
+    <form id="form1" runat="server">
+    <!-- Header for all pages -->
+    <header>
+        <div class="container text-center">
+            <div>
+                <!-- Navigation buttons and image for header -->
+                <asp:Button ID="btnHome" runat="server" CssClass="btn btn-info" Text="Home" OnClick="btnHome_Click" />
+                <asp:Button ID="btnAbout" runat="server" CssClass="btn btn-info" Text="About / Contact" OnClick="btnAbout_Click" />
+                <asp:Button ID="btnRegister" runat="server" CssClass="btn btn-info" Text="Register" OnClick="btnRegister_Click" />
+                <asp:Button ID="btnAdmin" runat="server" CssClass="btn btn-info" Text="Administration" OnClick="btnAdmin_Click" />
+                <div>
+                    <img src="Images/aspect-small.jpg"/>
+                </div>
+            </div>
+       </div>
+    </header>
+    <!-- Placeholder for various web application pages -->
+    <main>
+        <asp:ContentPlaceHolder ID="mainContent" runat="server"></asp:ContentPlaceHolder>
+    </main>
+        <!-- Footer for all pages -->
+    <footer class="well well-sm">
+        <small>
+            Contact Information:
+            <!-- Email contact information, link to default email client for customers -->
+            <asp:HyperLink ID="contactLink" runat="server" NavigateUrl="mailto:AspectShop@aspect.com">AspectShop@aspect.com</asp:HyperLink>
+        </small>
+    </footer>
+    </form>
+</body>
+</html>

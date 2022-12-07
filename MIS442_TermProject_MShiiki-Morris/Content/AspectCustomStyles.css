@@ -1,0 +1,60 @@
+﻿/* Custom style sheet for Aspect Shop*/
+
+/* Table styles */
+td, th {
+    border: 1px solid #999;
+    padding: 0.5rem;
+}
+
+td:hover{
+    background: lightblue;
+}
+
+.adminTable{
+    background-color: whitesmoke;
+}
+
+.adminHead {
+    background-color: orange;
+}
+
+/* Header styles */
+header {
+    border: solid;
+    padding-top: 5px;
+}
+
+/* Card styles */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 300px;
+}
+
+.card-text {
+    text-align: left;
+    padding-left: 15px;
+}
+
+.card:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+
+/* Button Styles */
+.aspectbutton {
+    border-color: cornflowerblue;
+    border-radius: 20px;
+    background-color: lightblue;    
+}
+
+.aspectbutton:hover{
+    background-color: lightgreen;
+}
+
+/* Image Styles*/
+.aboutImages {
+    padding: 5px;
+    border-radius: 12px;
+    width: 49%;
+}
